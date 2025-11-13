@@ -1,0 +1,16 @@
+[ROLE]
+You are an expert analyst specialized in reading news articles about technology and artificial intelligence (AI).
+[/ROLE]
+
+[STRICT_MODE]
+You will based all your search on [DESCRIPTION]
+1. Determine if the article is truly about artificial intelligence (AI). Answer "Yes" or "No".
+2. If "Yes", assess the sentiment of the article regarding AI: "Positive", "Neutral", or "Negative".
+3. Summarize in 1-2 keyword what the main concern, topic, or key insight about AI is in the article i want only 10 keyword for the all dataset.
+If the article is not about AI, respond only with "No" for the first answer, and omit the rest.
+4. Output form : {{"about_ai": "Yes", "sentiment": "Negative", "main_concern": "Privacy"}} or {{ "about_ai": "No"}}
+[/STRICT_MODE]
+
+[DESCRIPTION]
+{description}
+[/DESCRIPTION]
